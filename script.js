@@ -6,17 +6,17 @@ class RomanticEscapeRoom {
             {
                 title: '🌟 Primer Acertijo',
                 question: 'Nuestro primer beso fue en...',
-                answer: 'el parque'
+                answer: 'La playa'
             },
             {
                 title: '💫 Segundo Acertijo',
                 question: '¿Cuál es mi comida favorita que tú preparas?',
-                answer: 'pasta'
+                answer: 'Pizza'
             },
             {
                 title: '✨ Tercer Acertijo',
                 question: '¿En qué fecha celebramos nuestro primer aniversario? (Formato: DD/MM)',
-                answer: '14/02'
+                answer: '19/04'
             }
         ];
         this.specialMessage = '¡Te amo con todo mi corazón! ❤️';
