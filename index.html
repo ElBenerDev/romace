@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room Romántico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Pantalla de Inicio -->
+        <div id="welcome-screen" class="screen active">
+            <h1>💝 Escape Room Romántico 💝</h1>
+            <div class="start-container">
+                <input type="text" id="player-name" placeholder="Ingresa tu nombre...">
+                <button onclick="startGame()">Comenzar</button>
+            </div>
+        </div>
+
+        <!-- Pantalla de Juego -->
+        <div id="game-screen" class="screen">
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <div class="riddle-container">
+                <h2 id="riddle-title">Acertijo</h2>
+                <p id="riddle-text"></p>
+                <div class="input-container">
+                    <input type="text" id="riddle-answer" placeholder="Tu respuesta...">
+                    <button onclick="checkAnswer()">Verificar</button>
+                </div>
+                <p id="feedback" class="feedback"></p>
+            </div>
+        </div>
+
+        <!-- Pantalla Final -->
+        <div id="final-screen" class="screen">
+            <h2>🎉 ¡Felicidades! 🎉</h2>
+            <div class="final-message">
+                <p id="final-text"></p>
+                <div class="special-message">
+                    <p id="special-message"></p>
+                </div>
+            </div>
+            <button onclick="resetGame()">Jugar de nuevo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
